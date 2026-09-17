@@ -1,0 +1,50 @@
+world:
+  height: 42
+  width: 42
+  step_time: 0.1
+  sample_time: 0.1
+  offset: [5, 5]
+  collision_mode: 'stop'
+  control_mode: 'auto'
+
+robot:
+  - kinematics: {name: 'diff'}
+    shape: {name: 'rectangle', length: 4.6, width: 1.6, wheelbase: 0}
+    description: 'car_red.png'
+    state: [10, 10, 0]
+    goal: [40, 40, 0]
+    vel_min: [-8, -1]
+    vel_max: [8, 1]
+    goal_threshold: 0.8
+    plot:
+      show_trail: True
+      show_goal: False
+      show_arrow: True
+    sensors:
+      - type: 'lidar2d'
+        range_min: 0
+        range_max: 15
+        angle_range: 3.1415926
+        number: 200
+        noise: False
+
+obstacle:
+  - number: 15
+    distribution: {name: 'manual'}
+    state: [[12, 22], [20, 12], [22, 26], [28, 16], [32, 28], [36, 19], [33, 42], [43, 26], [14, 34], [24, 38], [35,35], [12,43], [43,12], [32,10], [45,36]]
+    shape:
+      - {name: 'circle', radius: 2.5}
+      - {name: 'circle', radius: 2}
+      - {name: 'circle', radius: 2.5}
+      - {name: 'polygon', vertices: [[-2, -1.5], [2, -1.5], [0, 2.5]]}
+      - {name: 'circle', radius: 2.0}
+      - {name: 'rectangle', length: 5, width: 3}
+      - {name: 'circle', radius: 2.0}
+      - {name: 'polygon', vertices: [[-2, -2], [2, -2], [2, 2], [-2, 2]]}
+      - {name: 'circle', radius: 2.0}
+      - {name: 'rectangle', length: 3, width: 5}
+      - {name: 'polygon', vertices: [[-2, -2], [2, -2], [2, 2], [-2, 2]]}
+      - {name: 'rectangle', length: 5, width: 3}
+      - {name: 'circle', radius: 3}
+      - {name: 'circle', radius: 1.5}
+      - {name: 'circle', radius: 2}

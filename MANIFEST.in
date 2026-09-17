@@ -1,0 +1,4 @@
+include README.md LICENSE
+recursive-include example *.py *.yaml
+recursive-include LICENSES *.txt
+recursive-include Media *.gif

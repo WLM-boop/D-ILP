@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ilp-cbf"
+version = "0.1.0"
+description = "Time-Efficient Iterative Learning Planning for Safety-Critical Dynamic Obstacle Avoidance"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LGPL-3.0-or-later"
+license-files = ["LICENSE", "LICENSES/*.txt"]
+dependencies = ["numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+sim = ["ir-sim==2.8.2", "matplotlib>=3.8,<4", "opencv-python>=4.8,<5", "scikit-learn>=1.3,<2"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ilc_planner", "ilc_planner.*"]
