@@ -1,8 +1,6 @@
 # Time-Efficient Iterative Learning Planning for Safety-Critical Dynamic Obstacle Avoidance
 
-**arXiv:** *Paper link to be added.*
-
-<!-- ARXIV PAPER LINK: Replace the line above with [arXiv:ARTICLE_ID](https://arxiv.org/abs/ARTICLE_ID) when available. -->
+**arXiv:** [arXiv:2609.20435](https://arxiv.org/abs/2609.20435)
 
 This repository provides a lightweight planning framework for safe and efficient mobile-robot navigation in dynamic environments. It improves traversal efficiency through iterative learning and provides lightweight runtime safety correction for dynamic obstacles based on local perception. By avoiding repeated online trajectory optimization, the framework enables real-time navigation with low computational cost.
 
@@ -79,13 +77,16 @@ The simulations use [IR-SIM](https://github.com/hanruihua/ir-sim).
 
 If you find this code or paper is helpful, please kindly star ⭐ this repository and cite our paper by the following BibTeX entry:
 
-*arXiv link to be added.*
-
-<!-- ARXIV CITATION: Insert the paper's arXiv link above and replace the placeholder below with its BibTeX entry. -->
-
 ```bibtex
-% BibTeX entry to be added for:
-% Time-Efficient Iterative Learning Planning for Safety-Critical Dynamic Obstacle Avoidance
+@misc{chen2026timeefficientiterativelearningplanning,
+  title={Time-Efficient Iterative Learning Planning for Safety-Critical Dynamic Obstacle Avoidance},
+  author={Zhiyi Chen and Shuli Lv and Chen Min and Yong Xu and Jian Sun and Quan Quan},
+  year={2026},
+  eprint={2609.20435},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2609.20435}
+}
 ```
 
 This research is based on iterative learning planning (ILP). If it is useful in your work, please consider also citing our other papers on ILP:
